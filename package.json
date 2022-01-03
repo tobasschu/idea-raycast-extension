@@ -21,7 +21,7 @@
       "required": true,
       "default": "",
       "title": "Path to scan for project folders.",
-      "description": "Path to scan for prject folders. Use : to seperate multiple paths"
+      "description": "Path to scan for project folders. Use : to separate multiple paths"
     }
   ],
   "dependencies": {
