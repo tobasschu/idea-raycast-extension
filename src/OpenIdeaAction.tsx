@@ -14,7 +14,12 @@ export function OpenIdeaAction(
         <ActionPanel.Item
             title={props.title}
             onAction={async () => {
-                execSync(`idea ${props.path}`);
+                console.log(
+                    execSync(
+                        `/usr/local/bin/idea ${props.path}`
+                    ).toString()
+                );
+                //execSync(`idea ${props.path}`, { stdio: 'inherit' });
                 await closeMainWindow();
             }}
         />
